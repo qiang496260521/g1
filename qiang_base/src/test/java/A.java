@@ -13,10 +13,16 @@ public class A {
 
     }
     public static void main(String[] args) {
+        int b=0;
         A a=new A();
+        System.out.println(Integer.compare(2,4));
+        b++;
         a.getA(() -> {
-            System.out.println("hhhhhhh");
+            System.out.println("asdasdas");
+
         });
+        b+=10;
+        System.out.println(b);
     }
 }
 @FunctionalInterface
